@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 // app.use(express.json({ extended: false }));
 
-app.use("/api/users", require("./routes/api/users"));
+app.use("/api", require("./routes/api/users"));
 
 app.get("/", (req, res) => {
   res.send("PETVET Server is running properly");
