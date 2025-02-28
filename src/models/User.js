@@ -10,6 +10,9 @@ const UserSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    firebase_UID: {
+        type: String,
+    },
     createdAt: {
         type: Date,
         default: Date.now
